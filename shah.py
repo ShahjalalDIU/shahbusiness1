@@ -30,7 +30,8 @@ def create_connection():
             host='192.250.235.46',
             user='shahbusi_shah',
             password='Shahjalal811',
-            database='shahbusi_login'
+            database='shahbusi_login',
+            port = '3306'
 
         )
         if conn.is_connected():
