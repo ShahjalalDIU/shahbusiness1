@@ -27,7 +27,7 @@ def create_connection():
     conn = None
     try:
         conn = mysql.connector.connect(
-            host='192.250.235.46',
+            host='localhost:3306',
             user='shahbusi_shah',
             password='Shahjalal811',
             database='shahbusi_login'
