@@ -27,10 +27,11 @@ def create_connection():
     conn = None
     try:
         conn = mysql.connector.connect(
-            host='192.250.235.46',
-            user='shahbusi_shah',
-            password='Shahjalal811',
-            database='shahbusi_login'
+            host=st.secrets["host"],
+            user=st.secrets["user"],
+            password=st.secrets["password"],
+            database=st.secrets["database"]
+
         )
         if conn.is_connected():
             return conn
